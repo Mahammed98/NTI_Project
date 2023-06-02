@@ -1,0 +1,50 @@
+/*
+ * SpiCfg.h
+ *
+ * Created: 5/11/2023 8:16:13 AM
+ *  Author: Muhammed El Nabawy
+ */ 
+
+
+#ifndef SPICFG_H_
+#define SPICFG_H_
+/* choose SPI polarity
+* 1- _LOW_POLARITY_
+* 2- _HIGH_POLARITY_
+*/
+#define __SPI_POLARITY__     _LOW_POLARITY_
+
+/* choose SPI PHASE
+* 1- _SAMPLE_FIRST_
+* 2- _SAMPLE_LAST_
+*/
+#define __SPI_PHASE__	     _SAMPLE_LAST_
+
+/* choose SPI SPEED_MODE
+* 1- _NORMAL_MODE_
+* 2- _DOUBLE_SPEED_MODE_
+*/
+#define __SPI_SPEED_MODE__   _NORMAL_MODE_
+
+/* choose SPI DATA_ORDER
+* 1- _MSB_FIRST_
+* 2- _LSB_FIRST_
+*/
+#define __SPI_DATA_ORDER__	_MSB_FIRST_
+
+/* choose SPI PRESCALER
+*   _SPI_PRESCALE_NORMAL_4
+*   _SPI_PRESCALE_NORMAL_16
+*	_SPI_PRESCALE_NORMAL_64
+*	_SPI_PRESCALE_NORMAL_128
+*
+*	_SPI_PRESCALE_DOUBLE_2
+*	_SPI_PRESCALE_DOUBLE_8  
+*	_SPI_PRESCALE_DOUBLE_32 
+*	_SPI_PRESCALE_DOUBLE_64
+*/	 
+#define __SPI_PRESCALER__ _SPI_PRESCALE_NORMAL_16
+
+
+     
+#endif /* SPICFG_H_ */
